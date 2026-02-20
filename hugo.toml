@@ -1,0 +1,4 @@
+baseURL = "https://novelsystems.tech/"
+languageCode = "en-us"
+title = "Novel Systems Engineering"
+theme = "novelsystems"
