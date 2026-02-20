@@ -293,6 +293,109 @@ pre {
 }
 
 /* ===========================
+   Home — Secondary Button
+   =========================== */
+.btn-outline {
+  background: transparent;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  padding: 8px 20px;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* ===========================
+   Home — Services Grid
+   =========================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--color-white);
+  border-left: 4px solid var(--color-accent);
+  padding: 1.5rem;
+}
+
+.service-card h3 {
+  margin-top: 0;
+}
+
+.service-card p {
+  color: var(--color-ink-mid);
+  margin-bottom: 0;
+}
+
+/* ===========================
+   Home — Approach Grid
+   =========================== */
+.approach-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.highlight-stat {
+  margin-bottom: 2rem;
+}
+
+.highlight-stat .stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.highlight-stat .stat-label {
+  font-size: 0.9rem;
+  color: var(--color-ink-mid);
+  margin-top: 0.25rem;
+}
+
+/* ===========================
+   About — Grid Layout
+   =========================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ===========================
+   About — Credentials List
+   =========================== */
+.credentials-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.credentials-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--color-rule);
+  font-size: 0.9rem;
+  color: var(--color-ink-mid);
+}
+
+.credentials-list li:last-child {
+  border-bottom: none;
+}
+
+/* ===========================
    Dividers
    =========================== */
 hr {
