@@ -1,0 +1,302 @@
+/* ===========================
+   CSS Custom Properties
+   =========================== */
+:root {
+  --color-bg:           #f5f5f5;
+  --color-bg-section:   #ebebeb;
+  --color-white:        #ffffff;
+  --color-ink:          #1a1a1a;
+  --color-ink-mid:      #4a4a4a;
+  --color-ink-light:    #7a7a7a;
+  --color-accent:       #1a4f8a;
+  --color-accent-light: #2e6db4;
+  --color-rule:         #d0d0d0;
+}
+
+/* ===========================
+   Reset & Base
+   =========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  color: var(--color-ink);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Typography
+   =========================== */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-accent-light);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code,
+pre {
+  font-family: "JetBrains Mono", "Fira Code", monospace;
+  background: var(--color-bg-section);
+  padding: 2px 6px;
+  font-size: 0.875rem;
+}
+
+/* ===========================
+   Layout
+   =========================== */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===========================
+   Navigation
+   =========================== */
+.site-nav {
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-rule);
+  padding: 0 0;
+}
+
+.site-nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.site-nav .nav-logo img {
+  height: 48px;
+  display: block;
+}
+
+.site-nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav .nav-links a {
+  color: var(--color-ink);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.site-nav .nav-links a:hover {
+  color: var(--color-accent-light);
+}
+
+.site-nav .nav-links a.active {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+.btn {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-white);
+  padding: 8px 20px;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: var(--color-accent-light);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+.site-footer {
+  background: var(--color-ink);
+  color: #cccccc;
+  padding: 3rem 0 1.5rem;
+}
+
+.site-footer .footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.site-footer .footer-logo {
+  height: 40px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.site-footer h4 {
+  color: var(--color-white);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.site-footer a {
+  color: #aaaaaa;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-white);
+}
+
+.site-footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer .footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.site-footer .footer-bottom {
+  border-top: 1px solid #333333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--color-ink-light);
+}
+
+/* ===========================
+   Cards (Portfolio and Blog)
+   =========================== */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--color-white);
+  border-left: 4px solid var(--color-accent);
+  padding: 1.5rem;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.2s;
+}
+
+.card:hover {
+  border-left-color: var(--color-accent-light);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--color-ink);
+}
+
+.card .card-meta {
+  font-size: 0.85rem;
+  color: var(--color-ink-light);
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  color: var(--color-ink-mid);
+  margin: 0;
+}
+
+.card .card-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  background: var(--color-bg-section);
+  color: var(--color-ink-mid);
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+/* ===========================
+   Page Header
+   =========================== */
+.page-header {
+  background: var(--color-white);
+  border-bottom: 1px solid var(--color-rule);
+  padding: 3rem 0 2rem;
+}
+
+.page-header h1 {
+  margin: 0 0 0.5rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--color-ink-mid);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* ===========================
+   Section utility
+   =========================== */
+.section {
+  padding: 3rem 0;
+}
+
+.section-alt {
+  background: var(--color-bg-section);
+}
+
+/* ===========================
+   Dividers
+   =========================== */
+hr {
+  border: none;
+  border-top: 1px solid var(--color-rule);
+  margin: 2rem 0;
+}
