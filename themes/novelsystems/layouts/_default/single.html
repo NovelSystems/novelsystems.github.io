@@ -1,6 +1,14 @@
 {{ define "main" }}
-<article>
-  <h2>{{ .Title }}</h2>
-  {{ .Content }}
-</article>
+<div class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+    <div class="card-meta">{{ .Date.Format "January 2, 2006" }}</div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    {{ .Content }}
+  </div>
+</div>
 {{ end }}
