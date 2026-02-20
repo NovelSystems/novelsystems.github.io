@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-main">
+        {{ .Content }}
+      </div>
+      <div class="contact-sidebar">
+        <h3>Samuel C. Ryan</h3>
+        <p style="color: var(--color-ink-mid); font-size: 0.95rem;">Principal Engineer<br>Novel Systems Engineering, LLC<br>Wilsonville, OR</p>
+        <hr>
+        <h4>Response Time</h4>
+        <p style="color: var(--color-ink-mid); font-size: 0.9rem;">Typically within one business day.</p>
+        <h4>Availability</h4>
+        <p style="color: var(--color-ink-mid); font-size: 0.9rem;">Currently accepting new engagements. Initial consultations are at no charge.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
