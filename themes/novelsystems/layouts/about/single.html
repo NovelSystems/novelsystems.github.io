@@ -1,0 +1,51 @@
+{{ define "main" }}
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+  </div>
+</div>
+
+<!-- Two-column About -->
+<div class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        {{ .Content }}
+      </div>
+      <div class="about-sidebar">
+        {{ with .Params.education }}
+        <h4>Education</h4>
+        <ul class="credentials-list">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+
+        {{ with .Params.certifications }}
+        <h4>Certifications</h4>
+        <ul class="credentials-list">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+
+        {{ with .Params.current_focus }}
+        <h4>Current Focus</h4>
+        <ul class="credentials-list">
+          {{ range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ with .Params.domains }}
+    <div class="section" style="border-top: 1px solid var(--color-rule); margin-top: 3rem; padding-top: 2rem;">
+      <h3>Domains of Experience</h3>
+      <div class="card-tags" style="margin-top: 1rem;">
+        {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
