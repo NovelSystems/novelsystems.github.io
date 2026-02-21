@@ -1,17 +1,18 @@
 ---
 title: "Services & Capabilities"
-subtitle: "Systems engineering — bridging hardware and software into working products."
+subtitle: "Systems engineering for first-of-a-kind hardware and software integration."
 draft: false
 ---
 
 ## Systems Engineering & Integration
 
-The core of what we do: taking hardware and software subsystems and making them work together as a complete, validated product. Systems engineering is the discipline that owns the interfaces — the places where firmware meets sensors, where test equipment meets the device under test, where data acquisition meets production decisions. Most engineering failures happen at these boundaries. That's where we work.
+The core of what we do: taking hardware and software subsystems and making them work together as a complete, validated product — especially when there's no existing playbook. Systems engineering is the discipline that owns the interfaces — the places where firmware meets sensors, where test equipment meets the device under test, where data acquisition meets production decisions. Most engineering failures happen at these boundaries, and they're hardest to manage when the system has never been built before. That's where we work.
 
 ### What This Means in Practice
 - Defining and validating interfaces between hardware and software subsystems
-- Test system architecture — designing the equipment, firmware, and software that prove a product works
+- Test system architecture — designing the equipment, firmware, and software that prove a product works, including systems with no commercial precedent
 - Sensor integration and data acquisition across mechanical, thermal, electrical, and optical domains
+- Validation methodology development for first-of-a-kind systems where no industry standard test exists
 - Production readiness — building the infrastructure that turns a working prototype into a manufacturable product
 - Requirements decomposition from system-level specifications down to component acceptance criteria
 
