@@ -1,4 +1,4 @@
-# novelsystems.tech
+# novelsystems.me
 
 Website for Novel Systems Engineering, LLC.
 
@@ -17,7 +17,7 @@ hugo server
 Site will be available at `http://localhost:1313`
 
 ## Deployment
-Pushing to `main` triggers the GitHub Actions workflow, which builds the site and deploys to GitHub Pages. The custom domain (`novelsystems.tech`) is configured via `static/CNAME`.
+Pushing to `main` triggers the GitHub Actions workflow, which builds the site and deploys to GitHub Pages. The custom domain (`novelsystems.me`) is configured via `static/CNAME`.
 
 ## Structure
 ```
