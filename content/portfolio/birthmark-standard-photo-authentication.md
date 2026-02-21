@@ -15,6 +15,8 @@ outcomes:
   - "Phase 1 hardware prototype operational on Raspberry Pi 4 HQ Camera with deployed Substrate blockchain registry"
 ---
 
+![The Birthmark Standard](/images/portfolio/Birthmark_Header.png)
+
 ## Background
 
 Trust in online media is collapsing. AI-generated images are now visually indistinguishable from photographs, and no widely deployed system can reliably prove that a given image came from a real camera at a specific time. The consequences extend well beyond technology — public trust in photojournalism, documentary evidence, and visual reporting is eroding in ways that directly affect democratic institutions.
@@ -42,6 +44,8 @@ This works regardless of format conversion, metadata stripping, social media rep
 At scale, the registry is designed to be operationally sustainable. Each authentication record uses approximately 140 bytes of on-chain storage. At one million images per day, that translates to 55 GB per year of growth, with query latency under 50 milliseconds. Institutional validators can operate a full node for $200–350 per year — a cost structure that makes long-term participation viable for journalism schools, public libraries, and nonprofit archives, not just well-funded technology companies.
 
 ## Technical Architecture
+
+![Birthmark Standard authentication pipeline — from camera capture through blockchain registration](/images/portfolio/Full_Visual_Pipeline.png)
 
 The system exploits a physical property of image sensors: manufacturing-unique non-uniformity correction (NUC) maps and photo-response non-uniformity (PRNU) patterns. Every sensor has a distinct fingerprint that cannot be forged or transferred. This fingerprint becomes the hardware root of trust.
 
