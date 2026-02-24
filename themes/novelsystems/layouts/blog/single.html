@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+    <div class="card-meta" style="margin-top: 0.75rem;">
+      {{ .Date.Format "January 2, 2006" }}
+      {{ with .Params.tags }}
+        &nbsp;·&nbsp;
+        {{ range . }}<span class="tag">{{ . }}</span> {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="post-body content-body">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+<div class="section" style="border-top: 1px solid var(--color-rule); padding-top: 2rem;">
+  <div class="container">
+    <a href="/blog/" style="color: var(--color-ink-mid); font-size: 0.9rem;">← Back to Blog</a>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+    <div class="card-meta" style="margin-top: 0.75rem;">
+      {{ with .Params.client }}<span>Client: {{ . }}</span> &nbsp;&middot;&nbsp; {{ end }}
+      {{ with .Params.tags }}
+        {{ range . }}<span class="tag">{{ . }}</span> {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ with .Params.outcomes }}
+<div class="section section-alt">
+  <div class="container">
+    <h2 style="margin-top:0;">Outcomes</h2>
+    <ul class="outcomes-list">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}
+
+<div class="section">
+  <div class="container content-body">
+    {{ .Content }}
+  </div>
+</div>
+
+<div class="section" style="border-top: 1px solid var(--color-rule); padding-top: 2rem;">
+  <div class="container">
+    <a href="/portfolio/" style="color: var(--color-ink-mid); font-size: 0.9rem;">&larr; Back to Portfolio</a>
+  </div>
+</div>
+{{ end }}
