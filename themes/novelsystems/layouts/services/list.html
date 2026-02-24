@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+  </div>
+</div>
+<div class="section">
+  <div class="container content-body">
+    {{ .Content }}
+  </div>
+</div>
+<div class="section cta-band">
+  <div class="container" style="text-align: center;">
+    <h2>Have a project in mind?</h2>
+    <p>Engagements start with a conversation. Tell us what you're working on.</p>
+    <a href="/contact/" class="btn btn-white">Get in Touch</a>
+  </div>
+</div>
+{{ end }}
