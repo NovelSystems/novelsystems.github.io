@@ -138,6 +138,7 @@ pre {
 .site-nav .nav-logo {
   position: relative;
   z-index: 11;
+  top: 5px;
 }
 
 .site-nav .nav-logo img {
