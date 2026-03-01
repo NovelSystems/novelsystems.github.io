@@ -3,14 +3,14 @@ title: "DDR Sensor — Material-Discriminating LiDAR for Maritime SAR and Radar 
 date: 2026-01-01
 draft: false
 client: "Novel Systems Engineering (internal R&D)"
-summary: "Invented a polarization-based LiDAR architecture that classifies objects by material composition — distinguishing life jackets from driftwood, or carbon-fiber drones from seagulls — by exploiting water and atmosphere as near-zero depolarization backgrounds. A dual orthogonal 1D silicon photonic phased array achieves 128x phase shifter reduction, transforming manufacturing yield from 10–30% to 93–98% and bringing sensor costs from $50,000–200,000 down to $600–800. Two provisional patents filed; SBIR Phase I submitted to U.S. Coast Guard."
+summary: "Invented a polarization-based LiDAR architecture that classifies objects by material composition — distinguishing survival equipment and persons in water from ocean background, or carbon-fiber drones from birds — by exploiting water and atmosphere as near-zero depolarization backgrounds. A dual orthogonal 1D silicon photonic phased array achieves 128x phase shifter reduction, transforming manufacturing yield from 10–30% to 93–98% and bringing sensor costs from $50,000–200,000 down to $600–800. Two provisional patents filed covering the core DDR architecture, adaptive environmental calibration, shared-aperture autonomous target acquisition, and distributed perimeter sensor networks; SBIR Phase I submitted to U.S. Coast Guard."
 tags: ["optical systems", "LiDAR", "silicon photonics", "maritime SAR", "radar augmentation", "drone detection", "SBIR", "patent pending"]
 outcomes:
   - "Dual orthogonal 1D phased array architecture achieving 128x reduction in phase shifter count (65,536 → 512)"
   - "Manufacturing yield transformed from 10–30% to 93–98% through dimensional decomposition"
   - "Projected production unit cost of $600–800 versus $50,000–200,000 for conventional systems"
   - "~20:1 predicted DDR contrast ratio between synthetic materials and ocean surface background at 1550 nm"
-  - "Two provisional patent applications filed (U.S. Provisional No. 63/984,145, Feb 2026; supplemental provisional covering calibration, shared-aperture acquisition, and perimeter network architectures)"
+  - "Two provisional patent applications filed (U.S. Provisional No. 63/984,145, Feb 2026; supplemental provisional covering additional DDR core embodiments, adaptive environmental calibration, shared-aperture autonomous target acquisition, and perimeter sensor network architectures)"
   - "SBIR Phase I proposal submitted to U.S. Coast Guard for bench-scale proof-of-concept validation"
   - "Peer-reviewed white paper published with complete architecture, link budget analysis, and application to both FMCW maritime and pulsed ToF radar augmentation modalities"
 ---
@@ -53,6 +53,16 @@ The dual 1D architecture decomposes 2D beam steering into independent azimuth an
 A single DFB laser feeds an integrated 3 dB splitter, with one path maintaining original wavelength and the other passing through a carrier-suppressed SSB modulator generating a 50 GHz frequency shift. Both wavelengths originate from the same optical cavity, eliminating the thermal drift sensitivity of dual-laser architectures — a 0.5°C differential thermal transient between independent lasers shifts relative frequency by ~6 GHz, enough to elevate inter-channel crosstalk from <0.1% to 5–10% and produce DDR systematic errors comparable to the water baseline the classification depends on. The single-laser design maintains frequency stability to ~1 ppm (50 kHz uncertainty), keeping the complete wavelength-channel crosstalk error budget at ≤0.005.
 
 At production volumes of 10,000+ units, sensor assembly costs reach $600–800 — a 75–300x reduction versus conventional systems. At higher volumes (100,000+ units) with photonic integration and ASIC-based processing, costs could approach $300–500 per sensor.
+
+## Adaptive Environmental Calibration
+
+Operational DDR classification depends on a stable baseline — the sensor must know what "zero" looks like before it can reliably flag deviations. The supplemental provisional discloses a complete calibration system that uses the deployment environment itself as a continuous reference, exploiting the physics that symmetric scattering media (ocean surface water, clear atmosphere) produce DDR values near zero by Mie and Rayleigh scattering theory.
+
+Three calibration modes operate across different operational contexts. Periodic automatic calibration acquires DDR measurements from spatially separated positions at set intervals, validates them through a spatial consistency check and quorum agreement, and updates the baseline using an exponentially weighted moving average with rate clamping to reject transient contamination. Continuous opportunistic calibration evaluates every scan point as a potential calibration candidate during normal operation — measurements near the current baseline and spatially distributed across the field of regard contribute to a running calibration pool without interrupting classification. Manual calibration covers startup initialization and operator-commanded resets.
+
+Both automated modes apply a two-stage validation before permitting a baseline update: a spatial consistency evaluation (localized contamination from debris, oil, or biological matter creates spatial heterogeneity and is rejected) and a quorum agreement check (requiring a majority of measurements to fall within the acceptance range, catching spatially uniform contamination such as algal blooms). These checks are architecturally distinct from Constant False Alarm Rate (CFAR) adaptive thresholding — CFAR estimates an unknown background level from reference cells, while DDR calibration validates against a physics-derived prediction that symmetric scatterers should produce DDR near zero.
+
+The calibration system includes fault detection and predictive maintenance: a running baseline that drifts beyond warning and critical thresholds triggers tiered alerts indicating possible polarization state degradation, detector drift, or optical contamination. Trend analysis projects time-to-fault, enabling scheduled maintenance before classification reliability degrades.
 
 ## Application: Maritime Search and Rescue
 
