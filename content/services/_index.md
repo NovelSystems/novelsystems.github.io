@@ -78,6 +78,8 @@ Technical consulting for organizations navigating novel technology development, 
 
 Engagements are scoped to deliver specific, measurable outcomes. We work directly with the technical and business stakeholders who own the problem — not through account managers or project coordinators.
 
-Typical engagements run 4–16 weeks with defined deliverables. Longer retainer arrangements are available for organizations that need sustained technical support across multiple workstreams.
+Fractional and retainer engagements are available for organizations that need sustained technical capacity without a full-time hire. These typically run 10–40 hours per month on an ongoing basis, covering multiple workstreams or providing dedicated senior engineering judgment across a longer horizon. This model works well for startups and growth-stage companies that need a senior systems engineer in the room regularly but aren't ready to add headcount.
+
+Project engagements run 4–16 weeks with defined deliverables, scoped around a specific problem with a clear finish line.
 
 All work is performed by Samuel C. Ryan directly. Novel Systems Engineering does not subcontract.

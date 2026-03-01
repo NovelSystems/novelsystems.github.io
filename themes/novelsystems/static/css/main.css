@@ -455,6 +455,13 @@ pre {
   margin-top: 0.25rem;
 }
 
+.highlight-stat .stat-detail {
+  font-size: 0.85rem;
+  color: var(--color-ink-light);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
 /* ===========================
    About — Grid Layout
    =========================== */
