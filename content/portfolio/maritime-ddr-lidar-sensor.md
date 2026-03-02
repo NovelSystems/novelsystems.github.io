@@ -3,11 +3,11 @@ title: "DDR Sensor — Material-Discriminating LiDAR for Maritime SAR and Radar 
 date: 2026-01-01
 draft: false
 client: "Novel Systems Engineering (internal R&D)"
-summary: "Invented a polarization-based LiDAR architecture that classifies objects by material composition — distinguishing survival equipment and persons in water from ocean background, or carbon-fiber drones from birds — by exploiting water and atmosphere as near-zero depolarization backgrounds. A dual orthogonal 1D silicon photonic phased array achieves 128x phase shifter reduction, transforming manufacturing yield from 10–30% to 93–98% and bringing sensor costs from $50,000–200,000 down to $600–800. Two provisional patents filed covering the core DDR architecture, adaptive environmental calibration, shared-aperture autonomous target acquisition, and distributed perimeter sensor networks; SBIR Phase I submitted to U.S. Coast Guard."
+summary: "Invented a polarization-based LiDAR architecture that classifies objects by material composition — distinguishing survival equipment and persons in water from ocean background, or carbon-fiber drones from birds — by exploiting water and atmosphere as near-zero depolarization backgrounds. A dual orthogonal 1D silicon photonic phased array achieves 128x phase shifter reduction, transforming physical defect yield from 74% to 98.5% and bringing sensor costs from $50,000–200,000 down to $600–800. Two provisional patents filed covering the core DDR architecture, adaptive environmental calibration, shared-aperture autonomous target acquisition, and distributed perimeter sensor networks; SBIR Phase I submitted to U.S. Coast Guard."
 tags: ["optical systems", "LiDAR", "silicon photonics", "maritime SAR", "radar augmentation", "drone detection", "SBIR", "patent pending"]
 outcomes:
   - "Dual orthogonal 1D phased array architecture achieving 128x reduction in phase shifter count (65,536 → 512)"
-  - "Manufacturing yield transformed from 10–30% to 93–98% through dimensional decomposition"
+  - "Physical defect yield transformed from 74% to 98.5% through dimensional decomposition"
   - "Projected production unit cost of $600–800 versus $50,000–200,000 for conventional systems"
   - "~20:1 predicted DDR contrast ratio between synthetic materials and ocean surface background at 1550 nm"
   - "Two provisional patent applications filed (U.S. Provisional No. 63/984,145, Feb 2026; supplemental provisional covering additional DDR core embodiments, adaptive environmental calibration, shared-aperture autonomous target acquisition, and perimeter sensor network architectures)"
