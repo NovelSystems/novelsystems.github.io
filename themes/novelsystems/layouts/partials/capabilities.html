@@ -1,0 +1,16 @@
+<section class="capabilities section" aria-labelledby="capabilities-heading">
+  <div class="container">
+    <div class="capabilities__header">
+      <span class="label">System Capabilities</span>
+      <h2 id="capabilities-heading">What DDR-enabled sensors do</h2>
+    </div>
+    <div class="capabilities__grid">
+      {{ range .Site.Data.capabilities.capabilities }}
+      <div class="capability-tile">
+        <h3>{{ .heading }}</h3>
+        <p>{{ .body }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

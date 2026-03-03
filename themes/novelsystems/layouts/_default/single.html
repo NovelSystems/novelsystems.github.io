@@ -1,13 +1,13 @@
 {{ define "main" }}
-<div class="page-header">
+<div class="page-hero">
   <div class="container">
     <h1>{{ .Title }}</h1>
-    {{ with .Params.summary }}<p class="page-subtitle">{{ . }}</p>{{ end }}
-    <div class="card-meta">{{ .Date.Format "January 2, 2006" }}</div>
+    {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+    {{ if not .Date.IsZero }}<p class="text-dim" style="font-size:0.85rem; letter-spacing:0.1em;">{{ .Date.Format "January 2, 2006" }}</p>{{ end }}
   </div>
 </div>
-<div class="section">
-  <div class="container">
+<div class="page-content">
+  <div class="container" style="max-width: 780px;">
     {{ .Content }}
   </div>
 </div>
