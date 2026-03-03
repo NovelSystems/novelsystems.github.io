@@ -1,0 +1,13 @@
+domains:
+  - label: "Maritime"
+    heading: "FMCW Maritime LiDAR"
+    body: "Shipboard and airborne person-in-water detection. Operates at 3–5km range with automated classification, no trained operator required."
+    link: "/applications#maritime"
+  - label: "Drone"
+    heading: "FMCW Drone Detection"
+    body: "Autonomous aerial target discrimination. DDR asymmetry distinguishes composite drone airframes from birds and background clutter against a near-zero atmospheric background."
+    link: "/applications#drone"
+  - label: "Radar Augmentation"
+    heading: "Pulsed ToF Radar Augmentation"
+    body: "Polarimetric overlay for existing radar installations. Adds material classification capability to conventional apertures without hardware replacement."
+    link: "/applications#radar"

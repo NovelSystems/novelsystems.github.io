@@ -1,14 +1,29 @@
-<nav class="site-nav">
+<nav class="site-nav" aria-label="Primary navigation">
   <div class="container">
-    <a href="/" class="nav-logo">
-      <img src="/images/novel_systems_banner2.png" alt="{{ .Site.Title }}">
+    <a href="/" class="nav-logo" aria-label="{{ .Site.Title }} home">
+      <img src="/images/novel_systems_logo.png" alt="{{ .Site.Title }}" onerror="this.style.display='none'">
+      <span class="nav-logo-text">Novel Systems Engineering</span>
     </a>
-    <ul class="nav-links">
-      <li><a href="/"{{ if eq .RelPermalink "/" }} class="active"{{ end }}>Home</a></li>
-      <li><a href="/about/"{{ if eq .RelPermalink "/about/" }} class="active"{{ end }}>About</a></li>
-      <li><a href="/services/"{{ if eq .RelPermalink "/services/" }} class="active"{{ end }}>Services</a></li>
-      <li><a href="/portfolio/"{{ if hasPrefix .RelPermalink "/portfolio/" }} class="active"{{ end }}>Portfolio</a></li>
-      <li><a href="/contact/" class="btn">Get in Touch</a></li>
+    <ul class="nav-links" role="list">
+      {{ range .Site.Menus.main }}
+      <li>
+        <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+      </li>
+      {{ end }}
     </ul>
+    <button class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-mobile">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </nav>
+<div class="nav-mobile" id="nav-mobile" role="dialog" aria-label="Mobile navigation">
+  <ul role="list">
+    {{ range .Site.Menus.main }}
+    <li>
+      <a href="{{ .URL }}"{{ if eq $.RelPermalink .URL }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</div>

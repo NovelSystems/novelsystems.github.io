@@ -1,0 +1,42 @@
+<section class="tech-layers" aria-labelledby="tech-heading">
+  <div class="container">
+    <div style="padding: 4rem 0 0;">
+      <span class="label">How It Works</span>
+      <h2 id="tech-heading" style="max-width: 560px;">The physics and architecture behind DDR</h2>
+    </div>
+
+    <!-- Row 1: Signal Processing -->
+    <div class="tech-row">
+      <div class="tech-row__content">
+        <span class="label">Signal Architecture</span>
+        <h2>From photons to classification in a single pipeline</h2>
+        <p>DDR processing runs on dual-wavelength coherent detection at 1550nm with FMCW ranging. Orthogonal polarization states are measured simultaneously through a shared aperture, then compared to produce the depolarization ratio asymmetry that drives classification.</p>
+        <p>Ocean water exhibits minimal depolarization (DDR &asymp; 0), creating a near-zero background against which biological targets produce approximately 20:1 DDR contrast. The result is a scalar output requiring no image interpretation by the operator.</p>
+        <a href="/technology/" class="btn btn--outline" style="margin-top: 1rem;">Full signal architecture</a>
+      </div>
+      <div class="tech-row__visual">
+        <div class="diagram-placeholder">
+          <div class="diagram-placeholder__icon">&#9632;</div>
+          <p class="diagram-placeholder__caption">System architecture diagram<br>FMCW dual-channel coherent receiver</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Hardware (reversed) -->
+    <div class="tech-row tech-row--reverse">
+      <div class="tech-row__content">
+        <span class="label">Sensor Hardware</span>
+        <h2>Dual 1D silicon photonic phased arrays</h2>
+        <p>The core sensor uses two orthogonal 256-element silicon photonic phased arrays operating at 1550nm. The 1D architecture provides a manufacturing yield advantage over 2D alternatives — approximately 98.5% per array versus 74% for equivalent 2D dies.</p>
+        <p>Twenty 1D dies occupy the same wafer area as one equivalent 2D die, driving production unit costs toward $600–$800 at volume versus $50,000–$200,000 for conventional 2D systems.</p>
+        <a href="/technology/#hardware" class="btn btn--outline" style="margin-top: 1rem;">Hardware architecture detail</a>
+      </div>
+      <div class="tech-row__visual">
+        <div class="diagram-placeholder">
+          <div class="diagram-placeholder__icon">&#9632;</div>
+          <p class="diagram-placeholder__caption">1D vs 2D phased array architecture<br>Yield and cost comparison</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
