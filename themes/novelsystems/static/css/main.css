@@ -890,10 +890,25 @@ a:hover {
   color: var(--text-mid);
 }
 
+.about-headshot {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin-bottom: 0;
+  filter: grayscale(20%);
+}
+
 .about-sidebar {
   background: var(--surface);
   border: 1px solid var(--border);
-  padding: 2rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.about-sidebar__text {
+  padding: 1.75rem 2rem 2rem;
 }
 
 .about-sidebar h4 {
