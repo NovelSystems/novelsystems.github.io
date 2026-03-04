@@ -25,16 +25,10 @@
 
 html {
   scroll-behavior: smooth;
-  position: relative;
-}
-
-html::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: url('/images/laser_background.jpg') center / cover no-repeat;
-  filter: brightness(0.5);
-  z-index: -1;
+  background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('/images/laser_background.jpg') center / cover no-repeat fixed;
+  background-color: #000;
 }
 
 body {
