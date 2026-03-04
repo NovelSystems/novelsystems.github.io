@@ -17,32 +17,19 @@
         <div style="margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border);">
           <span class="label">The Company</span>
           <h2>Novel Systems Engineering, LLC</h2>
-          <p style="color: var(--text-mid);">Novel Systems Engineering is a Portland, Oregon-based research and intellectual property development firm. The company's primary focus is the development, validation, and licensing of DDR-based polarimetric LiDAR sensor technology for maritime search and rescue, drone detection, and radar augmentation applications.</p>
-          <p style="color: var(--text-mid);">The firm operates on a pure IP licensing model: technology is developed and patented in-house, then licensed to defense and commercial OEMs for integration into production systems. Novel Systems Engineering does not manufacture sensor hardware.</p>
-          <p style="color: var(--text-mid);">Active pursuits include SBIR Phase I funding for DDR validation, provisional patent applications covering the core measurement method and hardware architecture, and initial licensing conversations with maritime OEMs.</p>
+          <p style="color: var(--text-mid);">Novel Systems Engineering, LLC is a Portland, Oregon IP development and licensing firm. The company develops, validates, and licenses DDR-based polarimetric LiDAR sensor technology for maritime search and rescue, drone detection, and radar augmentation applications. Technology is developed and patented in-house, then licensed to defense and commercial OEMs. The company does not manufacture sensor hardware.</p>
+          <p style="color: var(--text-mid);">Current activity: provisional patent prosecution covering the core DDR measurement method and hardware architecture, and licensing outreach to maritime OEMs.</p>
         </div>
       </div>
       <aside class="about-sidebar">
-        {{ with .Params.current_focus }}
-        <h4>Current Focus</h4>
+        {{ with .Params.prior_roles }}
+        <h4>Prior Roles</h4>
         <ul class="sidebar-list">
           {{ range . }}<li>{{ . }}</li>{{ end }}
         </ul>
         {{ end }}
         {{ with .Params.education }}
         <h4>Education</h4>
-        <ul class="sidebar-list">
-          {{ range . }}<li>{{ . }}</li>{{ end }}
-        </ul>
-        {{ end }}
-        {{ with .Params.certifications }}
-        <h4>Certifications</h4>
-        <ul class="sidebar-list">
-          {{ range . }}<li>{{ . }}</li>{{ end }}
-        </ul>
-        {{ end }}
-        {{ with .Params.domains }}
-        <h4>Domain Experience</h4>
         <ul class="sidebar-list">
           {{ range . }}<li>{{ . }}</li>{{ end }}
         </ul>
