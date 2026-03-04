@@ -2,8 +2,8 @@
    CSS Custom Properties
    =========================== */
 :root {
-  --bg:        #0a0a0a;
-  --surface:   #111111;
+  --bg:        rgba(10, 10, 10, 0.82);
+  --surface:   rgba(17, 17, 17, 0.85);
   --text:      #f0e6cc;
   --text-mid:  #b8a98a;
   --text-dim:  #7a6a52;
@@ -30,7 +30,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg);
+  background: transparent;
   font-family: "EB Garamond", Georgia, "Times New Roman", serif;
   color: var(--text);
   font-size: 18px;
