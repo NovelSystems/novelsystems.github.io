@@ -25,6 +25,16 @@
 
 html {
   scroll-behavior: smooth;
+  position: relative;
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url('/images/laser_background.jpg') center / cover no-repeat;
+  filter: brightness(0.5);
+  z-index: -1;
 }
 
 body {
@@ -35,15 +45,6 @@ body {
   color: var(--text);
   font-size: 18px;
   line-height: 1.75;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: url('/images/laser_background.jpg') center / cover no-repeat;
-  filter: brightness(0.5);
-  z-index: -1;
 }
 
 img {
