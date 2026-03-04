@@ -11,7 +11,7 @@
   --hover:     #d4b05a;
   --border:    #2a2318;
   --border-mid:#3a3020;
-  --nav-h:     72px;
+  --nav-h:     80px;
 }
 
 /* ===========================
@@ -171,25 +171,10 @@ a:hover {
   width: 100%;
 }
 
-.nav-logo {
+.site-logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
   text-decoration: none;
-}
-
-.nav-logo img {
-  height: 36px;
-  width: auto;
-}
-
-.nav-logo-text {
-  font-family: "EB Garamond", Georgia, serif;
-  font-size: 1.15rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  white-space: nowrap;
 }
 
 .nav-links {
