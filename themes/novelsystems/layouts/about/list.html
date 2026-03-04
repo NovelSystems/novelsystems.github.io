@@ -22,18 +22,21 @@
         </div>
       </div>
       <aside class="about-sidebar">
-        {{ with .Params.prior_roles }}
-        <h4>Prior Roles</h4>
-        <ul class="sidebar-list">
-          {{ range . }}<li>{{ . }}</li>{{ end }}
-        </ul>
-        {{ end }}
-        {{ with .Params.education }}
-        <h4>Education</h4>
-        <ul class="sidebar-list">
-          {{ range . }}<li>{{ . }}</li>{{ end }}
-        </ul>
-        {{ end }}
+        <img src="/images/sam_ryan_headshot.jpg" alt="Samuel C. Ryan" class="about-headshot">
+        <div class="about-sidebar__text">
+          {{ with .Params.prior_roles }}
+          <h4>Prior Roles</h4>
+          <ul class="sidebar-list">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
+          {{ with .Params.education }}
+          <h4>Education</h4>
+          <ul class="sidebar-list">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </div>
       </aside>
     </div>
   </div>
