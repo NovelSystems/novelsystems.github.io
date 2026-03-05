@@ -1,5 +1,5 @@
 ---
 title: "Applications"
-description: "Three licensing domains for DDR polarimetric LiDAR: maritime person-in-water detection, drone discrimination, and radar augmentation."
+description: "DDR polarimetric LiDAR licensing domains: maritime person-in-water detection, drone and bird discrimination, and radar augmentation. Physics-based design targets pending SBIR Phase I experimental validation."
 draft: false
 ---
