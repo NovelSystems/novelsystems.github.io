@@ -2,17 +2,17 @@
 <!-- Page Hero -->
 <div class="page-hero">
   <div class="container">
-    <span class="label">Patent Portfolio</span>
+    <span class="label">IP Portfolio</span>
     <h1>IP portfolio summary</h1>
-    <p>Novel Systems Engineering is building a patent portfolio covering the core DDR measurement method, signal processing pipeline, sensor hardware architecture, and application-specific implementations. The portfolio is structured to support licensing across all three target markets.</p>
+    <p>Novel Systems Engineering holds two provisional patent applications and is preparing four utility patent applications covering the DDR polarimetric LiDAR measurement method and related system implementations. The company licenses intellectual property. It does not manufacture sensors.</p>
   </div>
 </div>
 
 <!-- Portfolio Intro -->
 <div class="portfolio-intro">
   <div class="container">
-    <p>The IP strategy prioritizes broad method claims on the DDR measurement principle, supported by narrower implementation claims on the 1D silicon photonic phased array architecture and the FMCW signal processing pipeline. Application-specific claims cover the maritime PIW, drone detection, and radar augmentation implementations separately, allowing licensing to be structured per market without cross-licensing entanglements.</p>
-    <p>All applications listed below are in active prosecution or preparation. Patent numbers and publication dates will be added as applications publish. Licensing inquiries may reference applications by their subject-matter title pending publication.</p>
+    <p>The portfolio covers the DDR measurement method itself, the specific sensor architecture used to perform DDR measurements, and application-level system designs built on DDR sensing. FMCW ranging and silicon photonic phased arrays are established techniques used in the sensor design. The novel claims relate to the DDR measurement principle, the dual orthogonal 1D array configuration as applied to DDR sensing, and the specific system-level combinations described in the applications.</p>
+    <p>Provisional applications establish a priority date. They do not grant patent rights and have not been examined. The four utility applications listed below are in draft and have not been filed. Nothing in this portfolio is an issued patent.</p>
   </div>
 </div>
 
@@ -22,60 +22,86 @@
 
     <div class="patent-grid">
 
-      <div class="patent-card">
-        <div>
-          <h3>Polarimetric LiDAR Target Classification Using Differential Depolarization Response</h3>
-          <p>Core method claim covering the DDR measurement principle: simultaneous acquisition of orthogonal polarization returns from a shared aperture and computation of the depolarization ratio asymmetry for target classification. Covers all wavelengths, all platform types, and all target classes.</p>
-        </div>
-        <span class="patent-card__badge">Application — In Preparation</span>
+      <!-- Section heading: Provisional Applications -->
+      <div class="patent-section-heading">
+        <h2>Provisional Applications Filed</h2>
       </div>
 
       <div class="patent-card">
         <div>
-          <h3>FMCW Signal Processing Pipeline for DDR Computation with Range-Gated Clutter Rejection</h3>
-          <p>Implementation claim covering the FMCW modulation and coherent detection architecture that enables simultaneous range gating and DDR computation. Claims the combination of FMCW ranging with polarimetric dual-channel coherent detection for real-time classification.</p>
+          <h3>Core DDR Measurement System</h3>
+          <p class="patent-card__number">U.S. Provisional Application No. 63/984,145 &middot; Filed February 16, 2026</p>
+          <p class="patent-card__plain">Measures the difference in how a target depolarizes two orthogonal laser illumination states. That differential signal distinguishes materials that look identical to conventional LiDAR or radar.</p>
+          <p>Covers the DDR measurement method: differential scalar measurement of depolarization ratio asymmetry under orthogonal illumination states. The described implementation incorporates a dual orthogonal 1D silicon photonic phased array architecture, 1550 nm coherent detection, a four-channel polarimetric receiver, and FMCW ranging. The novel contribution is the DDR measurement approach and its integration with these components. FMCW ranging and silicon photonic phased arrays are prior art used within the system.</p>
         </div>
-        <span class="patent-card__badge">Application — In Preparation</span>
+        <span class="patent-card__badge">Provisional Filed</span>
       </div>
 
       <div class="patent-card">
         <div>
-          <h3>1D Silicon Photonic Phased Array Pair Architecture for Polarimetric LiDAR</h3>
-          <p>Hardware claim covering the use of two orthogonally-oriented 1D phased arrays as a polarimetric aperture pair, the post-test pairing methodology for yield improvement, and the mechanical second-axis steering scheme that enables 2D scan from two 1D dies.</p>
+          <h3>DDR System Extensions: Calibration, Acquisition, Tracking, and Response</h3>
+          <p class="patent-card__number">U.S. Provisional Application &middot; Filed approximately February 27, 2026</p>
+          <p class="patent-card__plain">Four inventions that extend the core DDR system: self-calibration against environmental drift, automated target finding and beam steering, coordinated multi-sensor tracking, and triggered responses to classification results.</p>
+          <p>This provisional covers four inventions:</p>
+          <ul class="patent-card__list">
+            <li><strong>Adaptive environmental calibration.</strong> Method for compensating environmental effects on DDR measurements in real time.</li>
+            <li><strong>Shared-aperture autonomous target acquisition.</strong> Closed-loop pointing control with adaptive field of view, using the DDR sensor aperture for both search and classification.</li>
+            <li><strong>Multi-node drift-predictive tracking network.</strong> Coordinated handoff and predictive track maintenance across multiple DDR sensor nodes.</li>
+            <li><strong>Automated classification response actions.</strong> System-level responses triggered by DDR classification outputs.</li>
+          </ul>
+          <!-- Note: The exact application number for this provisional was not provided. -->
         </div>
-        <span class="patent-card__badge">Application — In Preparation</span>
+        <span class="patent-card__badge">Provisional Filed</span>
+      </div>
+
+      <!-- Section heading: Utility Applications -->
+      <div class="patent-section-heading">
+        <h2>Utility Applications in Preparation</h2>
+        <p>The following four utility patent applications are in draft. They are being prepared for attorney review prior to filing. They have not been filed and are not patent-pending.</p>
       </div>
 
       <div class="patent-card">
         <div>
-          <h3>Automated Person-in-Water Detection System Using Polarimetric LiDAR Classification</h3>
-          <p>Application-specific claim for the maritime PIW use case. Covers the system architecture, classification pipeline, and operator interface for shipboard and airborne PIW detection using DDR measurement. Includes claims on the alert and position-output protocol.</p>
+          <h3>Utility Application 1</h3>
+          <p class="patent-card__plain">Subject matter not disclosed. Application is in draft preparation.</p>
+          <p>In draft. Specific claims and scope will be described here after filing.</p>
         </div>
-        <span class="patent-card__badge">Application — In Preparation</span>
+        <span class="patent-card__badge">Draft &mdash; Not Filed</span>
       </div>
 
       <div class="patent-card">
         <div>
-          <h3>Radar Track Augmentation via Polarimetric LiDAR Material Classification Overlay</h3>
-          <p>Application-specific claim for the radar augmentation use case. Covers the synchronized pulsed ToF LiDAR system, the DDR classification overlay, and the track-layer fusion protocol for adding material classification attributes to conventional radar contacts.</p>
+          <h3>Utility Application 2</h3>
+          <p class="patent-card__plain">Subject matter not disclosed. Application is in draft preparation.</p>
+          <p>In draft. Specific claims and scope will be described here after filing.</p>
         </div>
-        <span class="patent-card__badge">Application — In Preparation</span>
+        <span class="patent-card__badge">Draft &mdash; Not Filed</span>
       </div>
 
       <div class="patent-card">
         <div>
-          <h3>UAS Classification Using Differential Depolarization Response Against Low-Clutter Airspace Background</h3>
-          <p>Application-specific claim for the drone detection use case. Covers the detection and classification method for composite-airframe UAS against atmospheric background, the clutter discrimination approach, and integration into C-UAS sensor fusion architectures.</p>
+          <h3>Utility Application 3</h3>
+          <p class="patent-card__plain">Subject matter not disclosed. Application is in draft preparation.</p>
+          <p>In draft. Specific claims and scope will be described here after filing.</p>
         </div>
-        <span class="patent-card__badge">Application — In Preparation</span>
+        <span class="patent-card__badge">Draft &mdash; Not Filed</span>
+      </div>
+
+      <div class="patent-card">
+        <div>
+          <h3>Utility Application 4</h3>
+          <p class="patent-card__plain">Subject matter not disclosed. Application is in draft preparation.</p>
+          <p>In draft. Specific claims and scope will be described here after filing.</p>
+        </div>
+        <span class="patent-card__badge">Draft &mdash; Not Filed</span>
       </div>
 
     </div>
 
     <div style="margin-top: 3rem; padding: 2rem; background: var(--surface); border: 1px solid var(--border);">
-      <span class="label">Licensing Inquiry</span>
-      <h3 style="margin-bottom: 0.75rem;">Interested in licensing DDR technology?</h3>
-      <p style="color: var(--text-mid); max-width: 60ch;">Licensing discussions are open for all three application domains. Novel Systems Engineering offers both exclusive and non-exclusive licenses, structured by market segment. SBIR Phase I validation is in progress; licensing partnerships may be structured to co-develop or validate specific implementations.</p>
+      <span class="label">Licensing</span>
+      <h3 style="margin-bottom: 0.75rem;">Licensing inquiries</h3>
+      <p style="color: var(--text-mid); max-width: 60ch;">Novel Systems Engineering offers licensing for DDR technology across maritime, counter-UAS, and radar augmentation applications. Both exclusive and non-exclusive licenses are available, structured by market segment. For the provisional applications, reference the application title or number. For the utility drafts, inquire by subject area.</p>
       <a href="mailto:samryan.pdx@proton.me" class="btn" style="margin-top: 0.5rem;">Contact for licensing</a>
     </div>
 
