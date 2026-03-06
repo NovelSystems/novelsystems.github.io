@@ -1,9 +1,7 @@
 capabilities:
   - heading: "Detects"
-    body: "Persons in water at 3–5km range under sea states up to Beaufort 4"
+    body: "Persons in water at 3-5km range under sea states up to Beaufort 4 (design targets pending Phase I validation)"
   - heading: "Classifies"
     body: "Biological targets against rough sea surface without operator interpretation"
   - heading: "Discriminates"
     body: "Maintains classification through rain, spray, and partial submersion"
-  - heading: "Licenses"
-    body: "Technology available for integration by defense and commercial maritime OEMs"

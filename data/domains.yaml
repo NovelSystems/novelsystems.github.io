@@ -1,7 +1,7 @@
 domains:
   - label: "Maritime"
     heading: "FMCW Maritime LiDAR"
-    body: "Shipboard and airborne person-in-water detection. Operates at 3–5km range with automated classification, no trained operator required."
+    body: "Shipboard and airborne person-in-water detection. Design target: 3-5km range with automated classification, no trained operator required."
     link: "/applications#maritime"
   - label: "Drone"
     heading: "FMCW Drone Detection"
