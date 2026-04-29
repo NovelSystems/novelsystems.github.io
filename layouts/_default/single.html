@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ .Title }} — {{ .Site.Title }}</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+{{ partial "head.html" . }}
+<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" href="/favicon.ico">
+</head>
+<body>
+
+<!-- Top bar -->
+<header class="topbar">
+  <div class="mark">
+    <div class="mark-glyph"><em>n</em></div>
+    <div class="mark-name">Novel Systems Engineering</div>
+  </div>
+  <nav class="nav">
+    <a href="/#about">About</a>
+    <a href="/#projects">Projects</a>
+    <a href="/#founder">Founder</a>
+    <a href="mailto:sam@novelsystems.me">Contact</a>
+  </nav>
+</header>
+
+<!-- Detail plate -->
+<div class="detail-plate">
+  <img src="{{ .Params.image }}" alt="">
+  <div class="plate-meta">
+    <span>{{ .Params.fig }}</span>
+    <span>{{ .Params.figCaption }}</span>
+  </div>
+</div>
+
+<!-- Codex grid -->
+<div class="wrap">
+  <div class="codex-grid">
+
+    <!-- Left: meta -->
+    <div class="codex-left">
+      <a href="/" class="back-link">← Index</a>
+      <div class="codex-status">
+        {{ range .Params.status }}
+        <div class="codex-status-item">
+          <div class="codex-status-label">{{ .label }}</div>
+          <div class="codex-status-value">{{ .value }}</div>
+        </div>
+        {{ end }}
+      </div>
+      <div class="codex-margin-note">{{ .Params.marginNote }}</div>
+    </div>
+
+    <!-- Center: content -->
+    <div class="codex-body">
+      <div class="codex-header">
+        <h1 class="codex-title">{{ .Title }}</h1>
+        <div class="expansion">{{ .Params.expansion }}</div>
+        <p class="abstract">{{ .Params.tagline }}</p>
+      </div>
+      <div class="codex-content">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <!-- Right: tags -->
+    <div class="codex-right">
+      {{ range .Params.tags }}
+      <span class="proj-tag">{{ . }}</span>
+      {{ end }}
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-label">Affiliation</div>
+      <p class="foot-callout">
+        Sam Ryan also serves as Executive Director of <strong>The Birthmark Standard Foundation</strong>, a nonprofit developing photo authentication standards using camera sensor fingerprints. <a href="https://birthmarkstandard.org">birthmarkstandard.org →</a>
+      </p>
+      <div class="foot-meta">
+        Novel Systems<br>
+        Engineering LLC<br>
+        <span style="color: var(--ink-4);">© MMXXVI</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
