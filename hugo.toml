@@ -1,6 +1,10 @@
 baseURL = "https://novelsystems.me/"
 languageCode = "en-us"
 title = "Novel Systems Engineering"
+disableKinds = ["RSS", "sitemap", "robotsTXT", "taxonomy", "term", "section"]
+
+[outputs]
+  home = ["HTML"]
 
 [params]
   description = "Novel Systems Engineering — polarimetric LiDAR IP licensing and R&D for maritime search and rescue."
