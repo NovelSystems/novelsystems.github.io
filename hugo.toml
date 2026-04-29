@@ -1,28 +1,7 @@
 baseURL = "https://novelsystems.me/"
 languageCode = "en-us"
 title = "Novel Systems Engineering"
-theme = "novelsystems"
 
 [params]
   description = "Novel Systems Engineering — polarimetric LiDAR IP licensing and R&D for maritime search and rescue."
   contact = "mailto:samryan.pdx@proton.me"
-
-[[menu.main]]
-  name = "Technology"
-  url  = "/technology/"
-  weight = 1
-
-[[menu.main]]
-  name = "Applications"
-  url  = "/applications/"
-  weight = 2
-
-[[menu.main]]
-  name = "IP Portfolio"
-  url  = "/ip-portfolio/"
-  weight = 3
-
-[[menu.main]]
-  name = "About"
-  url  = "/about/"
-  weight = 4
