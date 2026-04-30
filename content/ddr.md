@@ -3,7 +3,7 @@ title: "DDR"
 expansion: "Differential Depolarization Response"
 tagline: "DDR classifies targets by material composition. Shape and motion are not factors."
 image: "/images/ddr_laser.jpg"
-fig: "Folio II — DDR"
+fig: "Folio 2 — DDR"
 figCaption: "Polarized SWIR Return · 1550 nm"
 tags: ["Sensor · SWIR LiDAR", "Polarimetric · 2026", "Utility · Pending"]
 status:
@@ -13,7 +13,7 @@ status:
     value: "Sensor · SWIR LiDAR"
   - label: "Filed"
     value: "2026"
-marginNote: "shape-blind classification — material signature as discriminator"
+marginNote: "shape-blind classification / material signature as discriminator"
 ---
 
 ## Abstract

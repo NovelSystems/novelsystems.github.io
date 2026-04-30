@@ -3,7 +3,7 @@ title: "CANDOR"
 expansion: "Core Architecture for Non-Deferrence, Oversight, and Reasoning"
 tagline: "RLHF-trained language models tend to agree with whoever is talking to them. CANDOR mitigates this through structured agent debate."
 image: "/images/candor_courtroom.jpg"
-fig: "Folio III — CANDOR"
+fig: "Folio 3 — CANDOR"
 figCaption: "Principled Agent Debate · Three-model arbitration"
 tags: ["AI · Multi-agent", "RLHF · 2026", "Published · +34.5%"]
 status:
@@ -13,7 +13,7 @@ status:
     value: "AI · Multi-agent"
   - label: "Published"
     value: "2026"
-marginNote: "two opponents, one judge — stability through structured conflict"
+marginNote: "two opponents, one judge / stability through structured conflict"
 ---
 
 ## Abstract
