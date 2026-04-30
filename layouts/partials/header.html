@@ -1,0 +1,24 @@
+<header class="topbar">
+  <div class="mark">
+    <div class="mark-glyph"><em>n</em></div>
+    <div class="mark-name">Novel Systems Engineering</div>
+  </div>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+  <nav class="nav">
+    <a href="/#about">About</a>
+    <a href="/#projects">Projects</a>
+    <a href="/#founder">Founder</a>
+    <a href="mailto:sam@novelsystems.me">Contact</a>
+  </nav>
+</header>
+<nav class="nav-mobile">
+  <a href="/#about">About</a>
+  <a href="/#projects">Projects</a>
+  <a href="/#founder">Founder</a>
+  <a href="mailto:sam@novelsystems.me">Contact</a>
+</nav>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-mobile').classList.toggle('nav-open');
+});
+</script>
