@@ -456,3 +456,54 @@ footer {
   display: flex; flex-direction: column; gap: 8px;
   padding-top: 4px;
 }
+
+/* ── Hamburger nav (hidden on desktop) ──────────────── */
+.nav-toggle {
+  display: none;
+  background: none; border: none; cursor: pointer;
+  font-size: 20px; color: var(--ink-2);
+  padding: 0; line-height: 1;
+}
+.nav-mobile {
+  display: none;
+}
+.nav-mobile.nav-open {
+  display: flex; flex-direction: column;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule-strong);
+  padding: 16px 20px; gap: 16px;
+}
+.nav-mobile a {
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink-2);
+}
+
+/* ── Mobile breakpoint ──────────────────────────────── */
+@media (max-width: 480px) {
+
+  /* Global */
+  .wrap, .narrow { padding: 0 20px; }
+
+  /* Header */
+  nav.nav a { display: none; }
+  .nav-toggle { display: block; }
+
+  /* Hero */
+  .hero-plate { aspect-ratio: 4 / 5; }
+  h1.headline { font-size: clamp(40px, 12vw, 56px); }
+
+  /* About */
+  .about-grid { grid-template-columns: 1fr; }
+
+  /* Projects */
+  .project { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .foot-grid { grid-template-columns: 1fr; }
+
+  /* Codex detail pages */
+  .codex-grid { grid-template-columns: 1fr; }
+  .codex-right { display: none; }
+  .codex-title { font-size: 48px; }
+
+}
