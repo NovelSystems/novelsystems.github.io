@@ -51,17 +51,15 @@ The custom domain (`novelsystems.me`) is configured via `static/CNAME`.
 
 ## Swapping In Real Assets
 
-### Logo
+### Logo & favicon
 
-Place your logo file at:
+| File | Used by |
+|---|---|
+| `static/images/novel_systems_logo.png` | Full-resolution master (transparent PNG, cropped to the mark) |
+| `static/images/novel_systems_mark.png` | Header mark in `layouts/partials/header.html` (96px tall, displayed at 32px for high-DPI screens) |
+| `static/favicon.ico` | Browser tab icon (16px + 32px), linked from both page layouts |
 
-```
-static/img/logo.png
-```
-
-The nav template (`themes/novelsystems/layouts/partials/nav.html`) already references `/img/logo.png`. If the image fails to load, it falls back gracefully to the text logo. The `onerror` attribute hides a broken image — text fallback is always visible alongside.
-
-Recommended logo specs: PNG with transparent background, height ~36–48px at 1x (72–96px @2x), gold or white mark on transparent background.
+To change the logo, replace the master, regenerate the header mark at 96px tall, and replace `favicon.ico`.
 
 ### Diagrams
 
@@ -122,7 +120,7 @@ themes/novelsystems/
   static/
     css/main.css                   # Single CSS file, plain CSS, dark theme
 static/
-  img/                             # Drop logo.png here
+  images/                          # Logo, header mark, page imagery
   favicon.ico
   CNAME                            # novelsystems.me
 .github/
